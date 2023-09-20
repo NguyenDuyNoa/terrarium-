@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/product-list.css">
+    <link rel="icon" href="../image/logo.jpeg">
+    <title>Danh sách</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="../image/logo.jpeg" alt="Terrarium">
+        </a>
+
+        <div class="navbar">
+            <a href="#">Cầu tròn</a>
+            <a href="#">Signature</a>
+            <a href="#">Hệ kín</a>
+        </div>
+
+        <div class="search-button">
+            <input type="text" placeholder="Tìm kiếm...">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="nav-action">
+            <a href='../html/login.html'><i class="fa-regular fa-user"></i></a>
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </header>
+
+    <section>
+        <!--  -->
+        <h3 class="link"><a href="../index.html">Trang chủ </a>/ Terrarium</h3>
+        <hr>
+    </section>
+
+    <main>
+        <!-- SIDEBAR -->
+        <div class="sidebar">
+            <div class="category">
+                <div class="title-category">Terrarium</div>
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-caret-right"></i> Terrarium cầu tròn</a></li>
+                    <li><a href="#"><i class="fa-solid fa-caret-right"></i> Terrarium signature</a></li>
+                    <li><a href="#"><i class="fa-solid fa-caret-right"></i> Terrarium hệ kín</a></li>
+                </ul>
+            </div>
+
+            <div class="sidebar-filter">
+                <h3 class="title-filter">Bộ lọc</h3>
+                <hr class="hr">
+                <h3 class="title-filter">Giá sản phẩm</h3>
+
+                <ul class="filter">
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            Giá dưới 500.000đ
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            500.000đ - 1.000.000đ
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            1.000.000đ - 2.000.000đ
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            2.000.000đ - 5.000.000đ
+                        </label>
+                    </li>
+                </ul>
+
+                <h3 class="title-filter">Kích thước bình</h3>
+
+                <ul>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            Dưới 20cm
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            Dưới 40cm
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            Dưới 60cm
+                        </label>
+                    </li>
+                    <li>
+                        <label>
+                            <input type="checkbox">
+                            Trên 60cm
+                        </label>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="product">
+            <h2>Terrarium | Nghệ Thuật Terrarium | Cây trồng trong lọ thủy tinh</h2>
+            <hr>
+
+            <div class="sort">
+                <h4>Xếp theo: </h4>
+                <a href=""><i class="fa-regular fa-circle"></i>Tên A - Z</a>
+                <a href=""><i class="fa-regular fa-circle"></i>Tên Z - A</a>
+                <a href=""><i class="fa-regular fa-circle"></i>Giá thấp đến cao</a>
+                <a href=""><i class="fa-regular fa-circle"></i>Giá cao đến thấp</a>
+            </div>
+
+            <hr>
+
+            <div class="product-list">
+             <!-- product list rẽ được render ra tại đây -->
+            </div>
+
+            <div class="pagination">
+                <a href="#" class="page-number active">1</a>
+                <a href="#" class="page-number">2</a>
+                <a href="#" class="page-number">3</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer-top">
+            <div class="container">
+                <div class="contact">
+                    <p class="footer-title">Liên Hệ Chúng Tôi</p>
+                    <li class="padding-5-0">
+                        <i class="icon-contact fa-solid fa-location-dot"></i>
+                        <span>70 Tô Ký, Quận 12, TP. Hồ Chí Minh</span>
+                    </li>
+                    <li class="padding-5-0">
+                        <i class="icon-contact fa-solid fa-phone"></i>
+                        <span>0336878073</span>
+                    </li>
+                    <li class="padding-5-0">
+                        <i class="icon-contact fa-solid fa-envelope"></i>
+                        <span>terrarium@hellp.com</span>
+                    </li>
+                </div>
+
+                <div class="time">
+                    <p class="footer-title">Thời Gian Mở Cửa</p>
+                    <table>
+                        <tbody>
+                            <tr class="table-row">
+                                <th class="table-head" scope="row">Thứ 2 - Thứ 6:</th>
+                                <td class="table-data padding-5-0">8AM - 10PM</td>
+                            </tr>
+
+                            <tr class="table-row">
+                                <th class="table-head" scope="row">Thứ 7:</th>
+                                <td class="table-data padding-5-0">9AM - 8PM</td>
+                            </tr>
+
+                            <tr class="table-row">
+                                <th class="table-head" scope="row">Chủ Nhật:</th>
+                                <td class="table-data padding-5-0">Đóng Cửa</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="ask">
+                    <p class="footer-title">Hỏi Đáp</p>
+
+                    <p class="padding-5-0">
+                        Bạn có câu hỏi gì cho chúng tôi không?
+                    </p>
+
+                    <form action="" class="newsletter-form padding-5-0">
+                        <input type="text" name="text" required placeholder="Nội dung" class="newsletter-input">
+                        <button type="submit" class="btn btn-primary">Gửi</button>
+                    </form>
+                </div>
+
+            </div>
+            <div class="footer-bottom">
+                <p class="copyright">
+                    &copy; 2023 <a href="#" class="copyright-link">Terrarium</a>. All Rights Reserved
+                </p>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/product-list.js"></script>
+</body>
+
+</html>
