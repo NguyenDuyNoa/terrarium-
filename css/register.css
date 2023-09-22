@@ -9,7 +9,8 @@
 }
 
 body {
-    background-image: url(../image/background.jpeg);
+    /* background-image: url(../image/background.jpeg); */
+    background-image: url(https://png.pngtree.com/background/20230614/original/pngtree-terrarium-filled-with-plants-and-greenery-picture-image_3478016.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -59,6 +60,10 @@ h2 {
 
 input::placeholder {
     font-size: 16px;
+}
+
+.pass h3{
+    color: white;
 }
 
 button {
