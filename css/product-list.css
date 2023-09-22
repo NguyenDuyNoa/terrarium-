@@ -92,6 +92,7 @@ a {
 section h3{
     margin-left: 140px;
     padding: 10px 0;
+    text-transform: capitalize;
 }
 
 section hr{
@@ -141,8 +142,11 @@ li {
 }
 
 .category a{
-    color: #000;
     text-transform: capitalize;
+}
+
+.page{
+    color: var(--bg-color);
 }
 
 .sidebar-filter{
@@ -287,7 +291,8 @@ footer{
 }
 
 .footer-top {
-    background: rgb(238, 238, 238);
+    /* background: rgb(238, 238, 238); */
+    background: #F6F5F2;
 }
 
 .container {
