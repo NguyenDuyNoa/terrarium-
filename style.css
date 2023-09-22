@@ -203,10 +203,61 @@ h4 {
 }
 
 .product-card img {
-    border-radius: 10px 10px 0 0;
     width: 100%;
     max-height: 290px;
+    border-radius: 10px 10px 0 0;
     object-fit: cover;
+}
+
+.image-product{
+    position: relative;
+}
+
+/* Thêm transition cho .actions để tạo hiệu ứng di chuyển */
+.actions {
+    position: absolute;
+    border-radius: 50px;
+    background-color: white;
+    bottom: 0;
+    right: -100%; /* Ban đầu ẩn phần tử bên phải ngoài màn hình */
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    transition: right 0.5s ease-in-out; /* Áp dụng hiệu ứng transition cho thuộc tính right */
+}
+
+/* Khi hover vào .image-product, thay đổi vị trí sang phải (0%) */
+.image-product:hover .actions {
+    right: 0%;
+}
+
+/* Thêm transition cho các nút trong .actions để tạo hiệu ứng khi hover vào */
+.actions button {
+    display: block;
+    font-size: 20px;
+    width: 45px;
+    height: 45px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out; /* Áp dụng hiệu ứng transition cho nút */
+}
+
+/* Khi hover vào các nút trong .actions, thay đổi màu nền */
+.actions button:hover {
+    background-color: var(--bg-color);
+}
+
+.favorite{
+    margin: 10px 10px 5px 10px;
+}
+
+.cart{
+    margin: 5px 10px 10px 10px;
 }
 
 .product-card h5 {

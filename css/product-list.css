@@ -232,6 +232,58 @@ label{
     object-fit: cover;
 }
 
+
+.image-product{
+    position: relative;
+}
+
+/* Thêm transition cho .actions để tạo hiệu ứng di chuyển */
+.actions {
+    position: absolute;
+    border-radius: 50px;
+    background-color: white;
+    bottom: 0;
+    right: -100%; /* Ban đầu ẩn phần tử bên phải ngoài màn hình */
+    margin: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    transition: right 0.5s ease-in-out; /* Áp dụng hiệu ứng transition cho thuộc tính right */
+}
+
+/* Khi hover vào .image-product, thay đổi vị trí sang phải (0%) */
+.image-product:hover .actions {
+    right: 0%;
+}
+
+/* Thêm transition cho các nút trong .actions để tạo hiệu ứng khi hover vào */
+.actions button {
+    display: block;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
+    background: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.5s ease-in-out; 
+}
+
+/* Khi hover vào các nút trong .actions, thay đổi màu nền */
+.actions button:hover {
+    background-color: var(--bg-color);
+}
+
+.favorite{
+    margin: 7px 7px 3.5px 7px;
+}
+
+.cart{
+    margin: 3.5px 7px 7px 7px;
+}
+
 .card-title {
     padding: 10px;
     font-size: 14px;
