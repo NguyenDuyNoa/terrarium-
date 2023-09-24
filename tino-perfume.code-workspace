@@ -5,6 +5,9 @@
 		},
 		{
 			"path": ".."
+		},
+		{
+			"path": "../../reactJS/ecommerce-terrarium"
 		}
 	],
 	"settings": {

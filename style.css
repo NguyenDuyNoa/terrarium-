@@ -15,6 +15,7 @@ main {
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
 .h3 {}
@@ -30,7 +31,7 @@ h4 {
     background-color: var(--bg-color);
     height: 80px;
     font-size: 20px;
-    padding: 0 30px;
+    padding: 0 130px;
 }
 
 .logo {
@@ -81,7 +82,7 @@ h4 {
 }
 
 .nav-action i {
-    margin: 10px;
+    margin: 20px;
     cursor: pointer;
 }
 

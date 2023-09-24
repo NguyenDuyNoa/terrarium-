@@ -88,3 +88,9 @@ a{
     color: crimson;
     text-decoration: none;
 }
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-left: 10px;
+}
