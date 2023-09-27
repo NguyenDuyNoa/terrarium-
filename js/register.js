@@ -79,10 +79,10 @@ function register() {
         var user = document.getElementById("user").value;
         var password = document.getElementById("password").value;
 
-        let checkExist = userData.find(item => item.email == email);
+        let checkExist = userData.find(item => item.user == user);
         
         if (checkExist) {
-            alert("Email tồn tại!");
+            alert("User tồn tại!");
         } else {
             var newUser = {
                 id: randomId(),
