@@ -21,7 +21,7 @@
         </a>
 
         <div class="navbar">
-            <a href="#">Cầu tròn</a>
+            <a href="./product-list.html">Cầu tròn</a>
             <a href="#">Signature</a>
             <a href="#">Hệ kín</a>
         </div>
@@ -34,7 +34,7 @@
         <div class="nav-action">
             <a href='../html/login.html'><i class="fa-regular fa-user"></i></a>
             <i class="fa-regular fa-heart"></i>
-            <i class="fa-solid fa-cart-shopping"></i>
+            <a href="./card.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </header>
 
@@ -48,98 +48,38 @@
         <h2 class="name">Giỏ hàng (1 sản phẩm )</h2>
 
         <div class="headerTable">
-                <div class="table-container">
-                    <div class="table-row header-table">
-                        <div class="table-cell-checkbox"></div>
-                        <div class="table-cell-product">Sản phẩm</div>
-                        <div class="table-cell">Đơn giá</div>
-                        <div class="table-cell">Số lượng</div>
-                        <div class="table-cell">Số tiền</div>
-                        <div class="table-cell">Thao tác</div>
-                    </div>
-
-                    <div class="table-row">
-                        <div class="table-cell-checkbox"><input type="checkbox"></div>
-                        <div class="table-cell-product">
-                            <img src="https://9xgarden.com/wp-content/uploads/2021/03/terrarium-tieu-canh-trong-binh-thuy-tinh-9xgarden-101-600x600.jpg" alt="">
-                            <span>Terrarium 103 - Komorebi</span>
-                        </div>
-                        <div class="table-cell">100.000đ</div>
-                        <div class="table-cell">
-                            <button class="quantity-button decrease">-</button>
-                            <span class="quantity">2</span>
-                            <button class="quantity-button increase">+</button>
-                        </div>
-                        <div class="table-cell">200.000đ</div>
-                        <div class="table-cell"><button class="remove">Xóa</button></div>
-                    </div>
-
-                    <div class="table-row">
-                        <div class="table-cell-checkbox"><input type="checkbox"></div>
-                        <div class="table-cell-product">
-                            <img src="https://9xgarden.com/wp-content/uploads/2021/03/terrarium-tieu-canh-trong-binh-thuy-tinh-9xgarden-101-600x600.jpg" alt="">
-                            <span>Terrarium 103 - Komorebi</span>
-                        </div>
-                        <div class="table-cell">100.000đ</div>
-                        <div class="table-cell">
-                            <button class="quantity-button decrease">-</button>
-                            <span class="quantity">2</span>
-                            <button class="quantity-button increase">+</button>
-                        </div>
-                        <div class="table-cell">200.000đ</div>
-                        <div class="table-cell"><button class="remove">Xóa</button></div>
-                    </div>
-
-                    <div class="table-row">
-                        <div class="table-cell-checkbox"><input type="checkbox"></div>
-                        <div class="table-cell-product">
-                            <img src="https://9xgarden.com/wp-content/uploads/2021/03/terrarium-tieu-canh-trong-binh-thuy-tinh-9xgarden-101-600x600.jpg" alt="">
-                            <span>Terrarium 103 - Komorebi</span>
-                        </div>
-                        <div class="table-cell">100.000đ</div>
-                        <div class="table-cell">
-                            <button class="quantity-button decrease">-</button>
-                            <span class="quantity">2</span>
-                            <button class="quantity-button increase">+</button>
-                        </div>
-                        <div class="table-cell">200.000đ</div>
-                        <div class="table-cell"><button class="remove">Xóa</button></div>
-                    </div>
-
-                    <div class="table-row">
-                        <div class="table-cell-checkbox"><input type="checkbox"></div>
-                        <div class="table-cell-product">
-                            <img src="https://9xgarden.com/wp-content/uploads/2021/03/terrarium-tieu-canh-trong-binh-thuy-tinh-9xgarden-101-600x600.jpg" alt="">
-                            <span>Terrarium 103 - Komorebi</span>
-                        </div>
-                        <div class="table-cell">100.000đ</div>
-                        <div class="table-cell">
-                            <button class="quantity-button decrease">-</button>
-                            <span class="quantity">2</span>
-                            <button class="quantity-button increase">+</button>
-                        </div>
-                        <div class="table-cell">200.000đ</div>
-                        <div class="table-cell"><button class="remove">Xóa</button></div>
-                    </div>
-
-                    <div class="table-ro table-row-pay">
-                        <div class="pay-left">
-                            <div class="table-cell-checkbox"><input type="checkbox"></div>
-                            <div class="table-cell-product">Chọn tất cả ( <span>4</span>)</div>
-                        </div>
-                        <div class="pay-right">
-                            <div class="table-cell-pay">Tổng thanh toán ( <span>0</span> sản phẩm ) :</div>
-                            <div class="table-cell-pay total-amount">0đ</div>
-                            <div class="table-cell-pay">
-                                <button>Mua hàng</button>
-                            </div>
-
-                        </div>
-                    </div>
-                   
+            <div class="table-container">
+                <div class="table-row header-table">
+                    <div class="table-cell-checkbox"></div>
+                    <div class="table-cell-product">Sản phẩm</div>
+                    <div class="table-cell">Đơn giá</div>
+                    <div class="table-cell">Số lượng</div>
+                    <div class="table-cell">Số tiền</div>
+                    <div class="table-cell">Thao tác</div>
                 </div>
-                
+
+                <div id="render">
+                    <!-- product sẽ được render ra tại đây -->
+                </div>
+
+                <div class="table-ro table-row-pay">
+                    <div class="pay-left">
+                        <div class="table-cell-checkbox"><input type="checkbox"></div>
+                        <div class="table-cell-product">Chọn tất cả ( <span>4</span>)</div>
+                    </div>
+                    <div class="pay-right">
+                        <div class="table-cell-pay">Tổng thanh toán ( <span>0</span> sản phẩm ) :</div>
+                        <div id="total-price" class="table-cell-pay total-amount">0đ</div>
+                        <div class="table-cell-pay">
+                            <button>Mua hàng</button>
+                        </div>
+
+                    </div>
+                </div>
+
             </div>
+
+        </div>
         </div>
 
     </main>

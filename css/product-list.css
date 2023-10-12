@@ -206,7 +206,7 @@ label{
     margin-right: 5px;
 }
 
-.product-list {
+#product-list {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 20px;
