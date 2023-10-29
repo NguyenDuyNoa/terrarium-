@@ -73,8 +73,6 @@ a {
     cursor: pointer;
 }
 
-
-
 .search-button input {
     border: none;
     outline: none;
@@ -89,165 +87,169 @@ a {
 
 
 /* -----SECTION----- */
-section h3{
+section h3 {
     margin-left: 140px;
     padding: 10px 0;
     text-transform: capitalize;
 }
 
-section hr{
-    margin-bottom: 20px;
+section hr {
+    margin-bottom: 10px;
 }
 
 
 /* ----- LINK ----- */
-.link{
+.link {
     margin-top: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
 }
 
-.link a{
+.link a {
     color: #000;
     font-weight: 400;
 }
 
-.link {
-    font-weight: 500;
+.link span {
+    color: var(--bg-color);
 }
 
-/* ----- MAIN ----- */
-.table-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+/* ----- Main ----- */
+.name h2 {
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: #212121;
 }
 
-.table-row {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-    padding: 10px 0;
-    margin: 5px;
-    border: 1px solid #ccc;
-}
-
-#render{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.header-table {
-    align-items: center;
-    height: 40px;
-    background-color: #f5f5f5;
+.name hr {
     margin-bottom: 20px;
 }
 
-.table-cell {
+.content {
+    display: flex;
+}
+
+#image img {
+    border-radius: 10px;
+    max-width: 480px;
+    max-height: 480px;
+}
+
+.small-image{
+    display: flex;
+    justify-content: space-between;
+    width: 480px;
+    margin-top: 10px;
+}
+
+.small-image img{
+    width: 150px;
+    height: 150px;
+}
+
+.describe {
+    margin-left: 30px;
+}
+
+.describe hr {
+    margin-bottom: 20px;
+}
+
+.describe li {
+    margin-bottom: 15px;
+    list-style-type: none;
+    font-size: 14px;
+    color: #363f4d;
+}
+
+.old-price {
+    font-weight: 300;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.left-price {
+    margin-right: 50px;
+    color: #000;
+}
+
+.highlight {
+    color: var(--bg-color);
+    font-size: 14px;
+}
+
+.price h3 {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.buy {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.quantity {
+    display: flex;
+    align-items: center;
+}
+
+.quantity input {
+    width: 40px;
+    height: 50px;
     text-align: center;
-    padding: 10px 0;
-    flex: 1;
-}
-
-.quantity{
-    padding: 7px;
-}
-.quantity-button{
-    width: 30px;
-    height: 30px;
-    background: white;
-    border: #ccc 1px solid;
-}
-
-.remove{
-    height: 40px;
-    width: 60px;
-    cursor: pointer;
-    background: #7DC9AF;
     border: none;
+    padding: 5px;
 }
 
-.remove:hover{
-    color: red;
-}
-
-.table-cell-product{
-    width: 500px; 
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: 40px;
-}
-
-.table-cell-product img{
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
-}
-
-.table-cell-checkbox{
-    width: 100px;
-    display: flex;
-    justify-content: center;
-}
-
-input[type="checkbox"] {
-    width: 25px;
-    height: 25px;
-}
-
-.price-cell {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.table-row-pay{
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    width: 100%;
-    padding: 10px 0;
-    margin: 20px;
-    border: 1px solid #ccc;
-    padding-right: -30px;
-}
-
-.pay-left, .pay-right{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.table-cell-pay{
-    margin-right: 40px;
-    padding: 20px 0;
-    align-items: center;
-}
-
-.total-amount{
-    color: red;
+.quantity .btn {
+    cursor: pointer;
+    padding: 5px;
+    background: white;
+    border: 1px solid #ebebeb;
+    width: 40px;
+    border-radius: 5px;
+    height: 50px;
     font-size: 20px;
-    font-weight: 600;
 }
 
-.table-cell-pay button{ 
-    padding: 10px;
+.btn:hover {
+    background: var(--bg-color);
+    color: white;
+}
+
+.buy-now {
+    margin-left: 100px;
+    height: 50px;
+    padding: 0 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: white;
     background: var(--bg-color);
     border: none;
-}
-
-.table-cell-pay button:hover{ 
-    color: red;
+    border-radius: 5px;
     cursor: pointer;
 }
 
+.h3{
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+    display: flex;
+    align-items: center;
+}
+
+.h3 img{
+    height: 40px;
+    margin: 0 10px;
+}
+
+.hr{
+    border: 1px var(--bg-color) dashed;
+}
 
 /* ----FOOTER---- */
 footer{

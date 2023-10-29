@@ -184,7 +184,7 @@ h4 {
     cursor: pointer;
 }
 
-.product-list {
+#product-list {
     display: grid;
     grid-template-columns: auto auto auto auto;
     gap: 25px;
@@ -218,6 +218,7 @@ h4 {
 /* Thêm transition cho .actions để tạo hiệu ứng di chuyển */
 .actions {
     position: absolute;
+    z-index: 50;
     border-radius: 50px;
     background-color: white;
     bottom: 0;

@@ -33,7 +33,6 @@
 
         <div class="nav-action">
             <a href='../html/login.html'><i class="fa-regular fa-user"></i></a>
-            <i class="fa-regular fa-heart"></i>
             <a href="./card.html"><i class="fa-solid fa-cart-shopping"></i></a>
         </div>
     </header>
@@ -45,12 +44,10 @@
     </section>
 
     <main>
-        <h2 class="name">Giỏ hàng (1 sản phẩm )</h2>
-
         <div class="headerTable">
             <div class="table-container">
                 <div class="table-row header-table">
-                    <div class="table-cell-checkbox"></div>
+                    <!-- <div class="table-cell-checkbox"></div> -->
                     <div class="table-cell-product">Sản phẩm</div>
                     <div class="table-cell">Đơn giá</div>
                     <div class="table-cell">Số lượng</div>
@@ -62,13 +59,9 @@
                     <!-- product sẽ được render ra tại đây -->
                 </div>
 
-                <div class="table-ro table-row-pay">
-                    <div class="pay-left">
-                        <div class="table-cell-checkbox"><input type="checkbox"></div>
-                        <div class="table-cell-product">Chọn tất cả ( <span>4</span>)</div>
-                    </div>
+                <div class="table-row table-row-pay">
                     <div class="pay-right">
-                        <div class="table-cell-pay">Tổng thanh toán ( <span>0</span> sản phẩm ) :</div>
+                        <div class="table-cell-pay">Tổng ( <span id="totalProduct">0</span> sản phẩm ) :</div>
                         <div id="total-price" class="table-cell-pay total-amount">0đ</div>
                         <div class="table-cell-pay">
                             <button>Mua hàng</button>

@@ -130,7 +130,7 @@ function viewProduct(id) {
     const product = products.find((product) => product.id === id);
     if (product) {
         localStorage.setItem("product", JSON.stringify(product));
-        window.location.href = `product-item.html?id=${id}`;
+        window.location.href = `./html/product-item.html?id=${id}`;
     } else {
         alert("Không tìm thấy sản phẩm!");
     }

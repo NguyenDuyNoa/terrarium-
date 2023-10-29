@@ -235,6 +235,7 @@ label{
 
 .image-product{
     position: relative;
+    max-height: 200px;
 }
 
 /* Thêm transition cho .actions để tạo hiệu ứng di chuyển */
